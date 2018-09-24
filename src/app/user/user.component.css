@@ -1,0 +1,22 @@
+.btn-one {
+    min-width: 140px;
+    background-color: gray;
+    border: 1px solid chartreuse;
+    color: chartreuse;
+    margin-bottom: 10px;
+}
+
+.btn-one:hover {
+    background-color: dimgrey;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.ul {
+    list-style: none !important;
+  }
+
+.fnt-grey {
+    color: gray;
+}

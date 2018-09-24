@@ -1,0 +1,28 @@
+
+<div class="row">
+<div class="col-4">
+    <h1 class="fnt-grey">Available users</h1>
+
+    <div *ngFor="let user of allUsers">
+      <button (click)="userClick(user.id)" class="btn-one">{{user.firstName}} {{user.surname}}</button>
+    </div>
+</div>
+
+<div class="col-4">
+    <h1 class="fnt-grey">Friends of friends</h1>
+
+    <div *ngFor="let user of directFriends">
+      <button class="btn-one">{{user.firstName}} {{user.surname}}</button>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <h1 class="fnt-grey">Suggested friends</h1>
+
+    <div *ngFor="let user of suggestedFriends">
+        <button class="btn-one">{{user.firstName}} {{user.surname}}</button>
+      </div>
+</div>
+
+</div>
+
